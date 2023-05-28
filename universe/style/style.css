@@ -23,9 +23,11 @@
 */
 
 :root {
-    --cor1: #1678D9;
-    --cor2: #1A8DB0;
+    --nav: #0e4f91;
+    --cor2: #45bce0;
     --cor3: #115A70;
+    --background: #d8d8d8;
+    --cor4: #1A8DB0;
 
 
     --fonte-padrao: arial, verdana, helvetica sans-serif;
@@ -36,46 +38,59 @@
 }
 
 body {
-    background-color: var(--cor3);
+    background-color: var(--background);
 }
 
 header {
+    background-image: linear-gradient(to bottom, var(--cor2),var(--nav) );
     min-width: 150px;
     text-align: center;
-    padding-top: 20px;
+    padding: 4px;
+   
 }
-
-.logo {
-    font-size: 2em;
+header label {
+    margin-left: 30px;
+    font-family: var(--font-alien);
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.479);
 }
-
-nav {
-    padding: 10px;
-    list-style: none;
-}
-
-nav a {
+header label a {
     text-decoration: none;
+    color: rgb(226, 226, 226);
 }
 
-main {
-    background-color: var(--cor2);
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 20px;
+header p {
+    font-size: 1em;
+    color: white;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+nav {
+    background-color: var(--nav);
+    text-align: center;
+    width: 100%;
+    padding: 7px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
     
 }
-main p {
-    font-family: var(--fonte-padrao);
-    font-size: 1.0em;
-    text-indent: 30px;
+nav ul {
+    display: inline-flex;
+}
+nav ul li {
+    width: 170px;
+    list-style: none;    
 }
 
-main h1 {
-    font-size: 1.8em;
-    font-family: var(--font-alien);
-    font-weight: none;
-    text-align: center;
-    letter-spacing: 3px;
+nav ul li a {
+    color: rgb(226, 226, 226);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.479);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.drop {
+    display: none;
 }
