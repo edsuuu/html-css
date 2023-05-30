@@ -127,10 +127,15 @@ main h1 {
 .blog-1  {
     border: 1px solid black;
 }
+
+/* BLOCO DA IMAGEM FLOAT  */
+
 .float { 
     float: left;
-    width: 30%;
-    height: 300px;
+    width: 28%;
+    height: 200px;
+    padding-right: 10px;
+    margin-bottom: 10px;
     
 }
 .float img {
@@ -146,17 +151,16 @@ main h1 {
 } */
 
 .content-1 {
-    display: flex;
+    
     border: 1px solid black;
     
 }
 .content-1 p{
-    width: 100%;
+    width: 96%;
     margin-top: 10px;
     margin-bottom: 10px;
     text-indent: 30px;
     padding: 15px;
-    display: flex;
     text-align: justify;
 }
 .blog-2  {
