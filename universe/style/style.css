@@ -103,6 +103,7 @@ nav ul li a {
 }
 
 main {
+    
     background-color: white;
     min-width: 50%;
     max-width: 85%;
@@ -140,6 +141,7 @@ main h1 {
     
 }
 .content-1 p{
+    
     margin-top: 10px;
     margin-bottom: 10px;
     text-indent: 30px;
