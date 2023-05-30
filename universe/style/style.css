@@ -28,6 +28,7 @@
     --cor3: #115A70;
     --background: #d8d8d8;
     --cor4: #1A8DB0;
+    --cor5: #45bce044;
 
 
     --fonte-padrao: arial, verdana, helvetica sans-serif;
@@ -102,17 +103,28 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-main {
-    
+main {  
     background-color: white;
-    min-width: 50%;
-    max-width: 85%;
+    width: 56%;
     margin: auto;
-    padding: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
 }
+main h1{
+    padding-bottom: 3px;
+    border-radius: 10px;
+    font-family: var(--fonte-destaque);
+    font-size: 3.1em;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 
-main h1 {
+}
+
+main h2 {
     margin-top: 5px;
     border-radius: 10px;
     font-family: var(--font-destaque);
@@ -120,98 +132,50 @@ main h1 {
     letter-spacing: 3px;
     text-align: left;
     text-indent: 17px;
-    background-image: linear-gradient(to right, var(--cor2), transparent);
+    background-image: linear-gradient(to right, var(--cor5), transparent);
     padding: 3px;
-}
-
-.blog-1  {
-    border: 1px solid black;
 }
 
 /* BLOCO DA IMAGEM FLOAT  */
 
 .float { 
     float: left;
-    width: 28%;
-    height: 200px;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 285px;
+    height: 155px;
     
 }
 .float img {
-    margin-top: 30px;
-    max-width: 100%;
-    min-width: 30%;
+    padding: 10px;
+    width: 70%px;
+    height: 155px;
 }
-/* .blog-1 img {
-    margin-left: 20px;
-    border: 3px solid black;
-    margin-top: 20px;
-    max-width: 30%;
-} */
 
-.content-1 {
-    
-    border: 1px solid black;
-    
-}
 .content-1 p{
-    width: 96%;
-    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 98%;
     margin-bottom: 10px;
-    text-indent: 30px;
-    padding: 15px;
+    
+    padding: 7px;
     text-align: justify;
-}
-.blog-2  {
-    border: 1px solid black;
-}
-.blog-2 img {
-    margin-left: 20px;
-    border: 3px solid black;
-    display: flex;
-    margin-top: 20px;
-    max-width: 30%;
 }
 
-.content-2 {
-    display: flex;
-    border: 1px solid black;
-    
-}
-.content-2 p{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-indent: 30px;
-    padding: 15px;
-    display: flex;
-    text-align: justify;
-}
-.blog-3  {
-    border: 1px solid black;
-}
-.blog-3 img {
-    margin-left: 20px;
-    border: 3px solid black;
-    display: flex;
-    margin-top: 20px;
-    max-width: 30%;
-    
+.first-letter {
+    text-indent: 10px;
+    font-weight: bold;
+    float: left;
+    font-size: 48px;
+    line-height: 42px;
 }
 
-.content-3 {
-    display: flex;
-    border: 1px solid black;
-    
+.linha {
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
 }
-.content-3 p{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-indent: 30px;
-    padding: 15px;
-    display: flex;
-    text-align: justify;
-}
+
 
 
 footer {
