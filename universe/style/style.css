@@ -23,12 +23,12 @@
 */
 
 :root {
-    --nav: #0e4f91;
+    --background:  #1a8db04b;
+    --nav: #0e5091;
     --cor2: #45bce0;
     --cor3: #115A70;
-    --background: #d8d8d8;
-    --cor4: #1A8DB0;
-    --cor5: #45bce044;
+    --cor4: #45bce044;
+    --cor5:  #1a8db02d;
 
 
     --fonte-padrao: arial, verdana, helvetica sans-serif;
@@ -125,16 +125,40 @@ main h1{
 }
 
 main h2 {
-    margin-top: 5px;
+    margin-top: 3px;
     border-radius: 10px;
     font-family: var(--font-destaque);
-    font-size: 2em;
+    font-size: 1.7em;
     letter-spacing: 3px;
     text-align: left;
     text-indent: 17px;
     background-image: linear-gradient(to right, var(--cor5), transparent);
-    padding: 3px;
+    padding: 2px;
 }
+
+.content-main a{
+   text-decoration: none; 
+   color: blue;
+   
+}
+.content-main a:hover{
+    color: rgb(73, 160, 189);
+    font-weight: bold;
+}
+.content-main p{
+    font-size: 1.2rem;
+    width: 98%;
+    margin-bottom: 10px;
+    padding: 7px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.content-main img {
+    width: 100%;
+    border-radius: 5px;
+}
+
 
 /* BLOCO DA IMAGEM FLOAT  */
 
@@ -152,11 +176,24 @@ main h2 {
     height: 155px;
 }
 
+.float-2 {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    width: 285px;
+    height: 155px;
+}
+
+.float-2 img {
+    padding: 10px;
+    width: 270px;
+    height: 168px;
+}
+
 .content-1 p{
     font-size: 1.2rem;
     width: 98%;
     margin-bottom: 10px;
-    
     padding: 7px;
     text-align: justify;
 }
