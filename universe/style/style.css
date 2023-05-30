@@ -112,6 +112,7 @@ main {
 }
 
 main h1 {
+    margin-top: 5px;
     border-radius: 10px;
     font-family: var(--font-destaque);
     font-size: 2em;
@@ -119,7 +120,7 @@ main h1 {
     text-align: left;
     text-indent: 17px;
     background-image: linear-gradient(to right, var(--cor2), transparent);
-    padding: 2px;
+    padding: 3px;
 }
 
 .blog-1  {
