@@ -142,11 +142,21 @@ main h2 {
     padding: 2px;
 }
 
+.content-main {
+    padding-bottom: 30px;
+}
+.content-main h2{
+    margin: auto;
+    text-align: center;
+    background-color: var(--cor2);
+    margin-bottom: 30px;
+    max-width: 700px;
+    min-width: 400px;
+}
+
 .content-main a{
    text-decoration: none; 
-   color: blue;
-   
-   
+   color: blue;   
 }
 .content-main a:hover{
     color: rgb(73, 160, 189);
@@ -163,9 +173,9 @@ main h2 {
 
 .content-main img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 5px;
+    
 }
-
 
 /* BLOCO DA IMAGEM FLOAT  */
 
