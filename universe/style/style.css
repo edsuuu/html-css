@@ -6,6 +6,7 @@
     font-family: "alien";
     src: url(../font/Alien\ Invader.ttf) format('truetype');
 }
+
 @font-face {
     font-family: "alien-italic";
     src: url(../font/Alien\ Invader\ Italic.otf) format('opentype');
@@ -23,12 +24,12 @@
 */
 
 :root {
-    --background:  #1a8db04b;
+    --background: #1a8db04b;
     --nav: #0e5091;
     --cor2: #45bce0;
     --cor3: #115A70;
     --cor4: #45bce044;
-    --cor5:  #1a8db02d;
+    --cor5: #1a8db02d;
 
 
     --fonte-padrao: arial, verdana, helvetica sans-serif;
@@ -48,12 +49,13 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor2),var(--nav) );
+    background-image: linear-gradient(to bottom, var(--cor2), var(--nav));
     width: auto;
     text-align: center;
     padding-top: 20px;
-    
+
 }
+
 header label {
     margin-left: 30px;
     font-family: var(--font-alien);
@@ -61,6 +63,7 @@ header label {
     letter-spacing: 5px;
     text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.479);
 }
+
 header label a {
     text-decoration: none;
     color: rgb(226, 226, 226);
@@ -75,15 +78,16 @@ header p {
     letter-spacing: 1px;
 
 }
+
 nav {
     background-color: var(--nav);
-    text-align: center;   
+    text-align: center;
     padding: 7px;
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
-    
+
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #ffffff;
     color: #0e4f91;
     padding: 7px;
@@ -95,9 +99,10 @@ nav a:hover{
 nav ul {
     display: inline-flex;
 }
+
 nav ul li {
     width: 160px;
-    list-style: none;    
+    list-style: none;
 }
 
 nav ul li a {
@@ -108,7 +113,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-main {  
+main {
     background-color: white;
     max-width: 900px;
     min-width: 400px;
@@ -119,7 +124,8 @@ main {
     padding-bottom: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
 }
-main h1{
+
+main h1 {
     padding-bottom: 3px;
     border-radius: 10px;
     font-family: var(--fonte-destaque);
@@ -145,7 +151,8 @@ main h2 {
 .content-main {
     padding-bottom: 30px;
 }
-.content-main h2{
+
+.content-main h2 {
     margin: auto;
     text-align: center;
     background-color: var(--cor2);
@@ -154,15 +161,17 @@ main h2 {
     min-width: 400px;
 }
 
-.content-main a{
-   text-decoration: none; 
-   color: blue;   
+.content-main a {
+    text-decoration: none;
+    color: blue;
 }
-.content-main a:hover{
+
+.content-main a:hover {
     color: rgb(73, 160, 189);
     font-weight: bold;
 }
-.content-main p{
+
+.content-main p {
     font-size: 1.2rem;
     width: 98%;
     margin-bottom: 10px;
@@ -174,19 +183,20 @@ main h2 {
 .content-main img {
     width: 100%;
     border-radius: 5px 5px 5px 5px;
-    
+
 }
 
 /* BLOCO DA IMAGEM FLOAT  */
 
-.float { 
+.float {
     float: left;
     padding-right: 20px;
     padding-bottom: 10px;
     width: 285px;
     height: 155px;
-    
+
 }
+
 .float img {
     padding: 10px;
     width: 70%px;
@@ -207,7 +217,7 @@ main h2 {
     height: 168px;
 }
 
-.content-1 p{
+.content-1 p {
     font-size: 1.2rem;
     width: 98%;
     margin-bottom: 10px;
@@ -249,7 +259,7 @@ main h2 {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-  }
+}
 
 .back-to-top:before {
     content: "";
@@ -270,14 +280,14 @@ footer {
     color: white;
     letter-spacing: .5px;
 }
+
 footer a {
     color: white;
-    
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
     font-weight: bold;
-    
+
 }
