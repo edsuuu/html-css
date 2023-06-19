@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+     <h2>Negrito / Destaque</h2>
+     <p>Nesta Frase temos um <b>termo em negrito</b> usando a tag b (não semantica).  </p>
+     <p>Nesta Frase, tenho um <strong>termo em destaque </strong> usando a tag strong (semantica) </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semantica). </p>
+    <!--para colocar uma abreviação no meio de um texto selecionar a frase com o mouse CTROL+SHIFT+P > procurar "Emmet Abbreviation" e digitar a Abreviação que seria I/STRONG/EM -->
+    <p>Nesta frase, temos <em>um termo em Ênfase</em> usando a tag EM (semantica).</p>
+    <p>Podemos tambem criar <mark style="background-color: rgb(210, 221, 49);">textos marcados</mark> usando a tag mark </p>
+    <!-- Para mudar a cor do texto marcado usar css dentro da chave mark usando style background color -->
+     <h2>Texto Grande e pequeno</h2>
+    <p>Estamos Criando <big>um texto grande</big> e <small>um texto pequeno</small> nesse paragráfo</p>
+    <!-- a tag big não é mais permiitida "foi descontinuada" porem ainda funciona-->
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um texto como excluido para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto Inserido</h2>
+    <p> podemos marcar um texto como <ins>inserido para dar</ins> enfase e indicar que ele foi adicionado depois.</p>
+    <p> Existe tambem o <u>sublinhado</u> com tag u (não semantica) </p>
+    <h2>Texto Sobrecrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+    <h2>Para Digitar um Código em Imagem</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem de JavaScript.</p>
+    <p>Ultilizando outra função que se chama "pre" é possivel ultilizar para alinhar codigos de outras linguagens, selecionando todo o texto e usando shift + tab é possivel limitar a largura de espaço, segue um exemplo com a linguagem python</p>
+    <pre>
+        <code>
+            num = int(input('Digite um numero'))
+            if num % 2 == 0:
+            print(f'O numero {é PAR}' )
+            else:f
+            print(f'O numero {é IMPAR}')
+            print('Fim do Programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <!--Para usar um texto com ASPAS é possivel ultilizar a tag "q" como abaixo-->
+    <p>Como diria o pai de um amigo: <q>o computador é burro muito rápido</q> </p>
+    <h2>Citações Completas</h2>
+    <p>Segundo o livro HTML5 de novac </p>
+    <!--Nessa Função abaixo é possivel deixar um espaço de um texto indicando uma citação e tambem é possivel incrementar dentro da tag blockquote cite="link"-->
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5_2%C2%AA_Edi%C3%A7%C3%A3o/f7JVBQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os Elemntos HTML5 neste capitulo descrevem os bloco de texto.
+    </blockquote>
+    <h2>Abreviação</h2>
+    <!-- Para Criar um poupapp sobre o significado da palavra usamos a tag abbr dentro de uma palavra especifica-->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+    
+</body>
+</html>

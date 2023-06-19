@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold; /* a tag bold é para deixar o texto em negrito*/
+        }
+        a:visited {
+            color: rgb(9, 255, 0);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blue;
+        }
+
+        .especial::after {
+            content: '[Link]';
+            color: darkgray;
+        }
+
+        /*
+        Seletores personalizados 
+        
+        #  = id
+        .  = class
+        :  = pseudo class
+        :: = pseudo element
+        >  = clildren 
+        */
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=YHSP-AUX2yg&ab_channel=JeanTassy" target="_blank">Musica Youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=-WHlY4kIHF0&t=2s&ab_channel=N%C3%A3o%C3%A9oLUANGAMEPLAY" target="_blank">Video Youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=jF5RQphdxgM&ab_channel=BugaluClips" target="_blank">Gameplay Youtube</a></li>
+        <li><a href="../ex001/index.html" target="_blank" class="especial">DIRETORIO</a></li>
+    </ul>
+</body>
+</html>

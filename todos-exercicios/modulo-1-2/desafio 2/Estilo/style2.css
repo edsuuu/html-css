@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(109, 109, 109);
+    color: aquamarine;
+}
+h1 {
+    margin: auto;
+    margin-left: 42%;
+    margin-bottom: 01%;
+}
+iframe {
+    margin-left: 30%;
+    margin-top: auto;
+}
+a {
+    margin-left: 42%;
+    color: aquamarine;
+    font-size: 0px;
+}
+img {
+    margin-top: -03%;
+    margin-left: 47%;
+}
