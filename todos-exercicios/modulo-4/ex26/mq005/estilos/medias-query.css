@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* Typical device break points
+Celular: ate 600px
+Tablet: 768px ate  992px
+Desktop: 992px ate 1200px 
+Tv: acima de 1200px 
+*/
+
+@media screen and (min-width: 768px)
+{
+    #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu ul li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+
