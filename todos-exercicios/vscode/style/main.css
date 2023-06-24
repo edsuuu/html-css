@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+*{
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Passion One', cursive;
+    font-family: 'Sriracha', cursive; */
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: url('../assets/bg-desktop.jpg') no-repeat top center/cover;
     
@@ -8,11 +17,63 @@ body {
 .container {
     width: 360px;
     height: 943px;
-    border: 1px solid white;
-    margin: auto;
+    padding: 0 24px;
+    margin: 56px auto 8px auto;
+    
 
 }
-.profile img{ 
-    width: 132px;
+.profile {
+    text-align: center;
+    padding: 24px;
+
     
+}
+.profile img{ 
+    
+    width: 132px;
+    padding-bottom: 8px;
+    /* pra alinhar ultilizar ou o text center no elemento pai ou essa opção abaixo 
+    
+    display: block;
+    margin: auto;    */
+}
+
+.profile a {
+    margin-top: 8px;
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+/* links */
+
+ul {
+     list-style: none;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: background 0.5s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
 }
