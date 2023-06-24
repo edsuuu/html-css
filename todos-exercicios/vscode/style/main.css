@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body {
+    background: url('../assets/bg-desktop.jpg') no-repeat top center/cover;
+    
+}
+
+.container {
+    width: 360px;
+    height: 943px;
+    border: 1px solid white;
+    margin: auto;
+
+}
+.profile img{ 
+    width: 132px;
+    
+}
