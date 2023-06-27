@@ -4,17 +4,31 @@
     font-family: 'Inter', sans-serif;
     /* font-family: 'Passion One', cursive;
     font-family: 'Sriracha', cursive; */
-    color: white;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --font-night-color: white;
-    --font-light-color: black;
-    --bg-url: url('../assets/bg-desktop.jpg'); 
+    --text-color: white;
+    --bg-url: url('../assets/bg-mobile.jpg'); 
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.5) ;
+    --surface-color-hover: rgba(255, 255, 255, 0.2);
+    --highlight-color:rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url('../assets/moon-stars.svg'); 
     
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url('../assets/bg-mobile-light.jpg'); 
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.1) ;
+    --surface-color-hover:rgba(0, 0, 0, 0.2);
+    --highlight-color:rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url('../assets/sun.svg'); 
 }
 
 body {
@@ -48,10 +62,23 @@ body {
 .profile a {
     margin-top: 8px;
     text-decoration: none;
-    color: var(--font-night-color);
+    color: var(--text-color);
     line-height: 24px;
     font-weight: 500;
 }
+
+.switch button{
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+
+
+}
+
+
 
 /* links */
 
@@ -69,8 +96,8 @@ ul li a{
     align-items: center;
     justify-content: center;
     padding: 16px 24px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--surface-color);
+    border: 1px var(--stroke-color);
     border-radius: 12px;
     -webkit-backdrop-filter: blur(4px);
 
@@ -81,7 +108,7 @@ ul li a{
 }
 
 ul li a:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--surface-color-hover);
     border: 1.5px solid white;
 }
 
