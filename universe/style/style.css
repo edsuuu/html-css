@@ -172,10 +172,10 @@ main h2 {
 }
 
 .content-main p {
-    font-size: 1.2rem;
-    width: 98%;
+    font-size: 1.3rem;
+    width: 96%;
     margin-bottom: 10px;
-    padding: 7px;
+    padding: 17px;
     text-align: justify;
     text-indent: 20px;
 }
@@ -199,14 +199,14 @@ main h2 {
 
 .float img {
     padding: 10px;
-    width: 70%px;
+    width: 70%px; /* bug q funciona */
     height: 155px;
 }
 
 .float-2 {
     float: left;
     padding-right: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     width: 285px;
     height: 165px;
 }
@@ -292,3 +292,4 @@ footer a:hover {
     font-weight: bold;
 
 }
+
