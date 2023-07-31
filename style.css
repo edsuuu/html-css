@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(70, 69, 69);
+}
+header {
+  background-color: rgb(121, 125, 125);
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  background-color: rgb(196, 190, 183);
+}
+nav #menu {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  list-style: none;
+}
+nav ul {
+  margin: auto;
+}
+nav ul li {
+  margin: auto;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 3px;
+  width: 150px;
+}
+#drop {
+  display: none;
+}
+
+.links a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  /* a tag bold é para deixar o texto em negrito*/
+}
+
+.link a:visited {
+  color: rgb(9, 255, 0);
+}
+
+.link a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.link a:active {
+  color: blue;
+}
+#especial::after {
+  content: "[Link]";
+  color: darkgray;
+}

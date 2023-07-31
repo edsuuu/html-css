@@ -4,24 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>HTML</title>
 </head>
 
 <body>
   <header>Tudo que Aprendi com HTML & CSS</header>
   <nav>
-    <ul>
-      <li>Home</li>
-      <li>O que tem por aqui ?</li>
-      <li>Topicos</li>
+    <ul id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">O que tem por aqui ?</a></li>
+      <li><a href="#">Topicos</a></li>
         <ul>
-          <li>Inputs</li>
+          <li id="drop"><a href="#">Inputs</a></li>
         </ul>
-      <li>Login</li>
-      <li>MediasQuery</li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">MediasQuery</a></li>
     </ul>
   </nav>
 
+<main>
+    <div class="container">
+      <h1>Tudo aqui</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit exercitationem sit corrupti atque natus, voluptatibus error unde quam sunt illum et rerum? Nobis, quidem quia consequuntur atque voluptatem magni modi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolore consectetur veniam minima repudiandae, praesentium, aspernatur enim voluptate nemo officiis necessitatibus dolorem quas explicabo corporis, quod sapiente nesciunt neque optio.</p>
+    </div>
+    
+
+    
+    <div class="links">
+      <h1>Personalizando Links</h1>
+        <ul>
+        <li><a href="https://www.youtube.com/watch?v=YHSP-AUX2yg&ab_channel=JeanTassy" target="_blank">Musica Youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=-WHlY4kIHF0&t=2s&ab_channel=N%C3%A3o%C3%A9oLUANGAMEPLAY" target="_blank">Video Youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=jF5RQphdxgM&ab_channel=BugaluClips" target="_blank">Gameplay Youtube</a></li>
+        <li><a href="#" target="_blank" id="especial">DIRETORIO</a></li>
+    </ul>
+    </div>
+</main>
   
 </body>
 </html>
