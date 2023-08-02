@@ -1,31 +1,48 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-/* * {
+* {
   padding: 0;
   margin: 0;
-} */
-
-body {
-  background-color: rgb(128, 126, 126);
 }
 
 header {
-  background-color: rgb(121, 125, 125);
-  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: rgb(0, 95, 249); */
+  padding: 10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: bold;
+  
+}
+
+#header:after {
+  content: '|';
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 nav {
+  
   padding: 10px;
   display: flex;
-  background-color: rgb(196, 190, 183);
+  justify-content: space-around;
+ box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.172);
 }
 
-nav #menu {
+ nav #menu {
   display: inline-flex;
-  justify-content: center;
   text-align: center;
   gap: 30px;
   list-style: none;
@@ -36,23 +53,60 @@ nav ul {
 }
 
 nav ul li {
-  margin: auto;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 3px;
-  width: 150px;
+  background-color: aqua;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  padding-bottom: 3px;
+  width: 170px;
 }
 
-#drop {
-  display: none;
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+ 
 }
+
+nav ul li:hover {
+  background-color: rgb(194, 197, 197);
+  transition: 0.5s;
+  
+}
+
+.menu-drop {
+  align-self: center;
+  margin-right: 20px;
+  width: 160px;
+  
+
+}
+
+.menu-drop ul {
+  display: none;
+  position: absolute;
+
+  
+}
+
+.menu-drop:hover ul {
+  display: block;
+  color: white;
+  background-color: rgb(237, 237, 237);
+}
+
 
 .container {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1000px;
   background-color: beige;
 }
+
 .container .oquetemporaqui {
   justify-content: center;
   align-self: center;
@@ -118,17 +172,19 @@ nav ul li {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
 .blc {
-    display: inline-block;
-    background-color: lightblue;
-    border: 2px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 150px;
-    width: 150px;
+  display: inline-block;
+  background-color: lightblue;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
+  width: 150px;
 }
+
 .blc:hover {
-    background-color: crimson;
+  background-color: crimson;
 }
 
 .duelista {
@@ -136,20 +192,23 @@ nav ul li {
   width: 241px;
   border: 1px solid black;
 }
-.tipos-hover .duelista > ul {
+
+.tipos-hover .duelista>ul {
   border: 1px solid black;
   display: none;
 }
-.tipos-hover .duelista:hover > ul {
-      
-      display: block;
-      color: white;
-      background-color: rgb(237, 237, 237); 
-      width: 200px;
+
+.tipos-hover .duelista:hover>ul {
+
+  display: block;
+  color: white;
+  background-color: rgb(237, 237, 237);
+  width: 200px;
 }
+
 .tipos-hover .duelista:hover {
   color: rgb(255, 0, 0);
-} 
+}
 
 .emoji {
   align-self: center;
@@ -172,6 +231,7 @@ nav ul li {
   width: 800px;
   border: 1px solid;
 }
+
 .table {
   padding: 30px;
   align-self: center;
@@ -202,15 +262,13 @@ nav ul li {
   width: 500px;
 }
 
-.tabela-habitante td,
-th {
+.tabela-habitante td, th {
   border: 1px solid black;
   padding: 10px;
 
 }
 
-.tabela-habitante thead,
-tfoot {
+.tabela-habitante thead, tfoot {
   background-color: gray;
   color: white;
 }
