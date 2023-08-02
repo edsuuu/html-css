@@ -84,11 +84,10 @@ nav ul li {
   color: red;
   text-decoration: none;
   font-weight: bold;
-  /* a tag bold é para deixar o texto em negrito*/
 }
 
 .links a:visited {
-  color: rgb(9, 255, 0);
+  color: rgb(46, 49, 245);
 }
 
 .links a:hover {
@@ -97,7 +96,7 @@ nav ul li {
 }
 
 .links a:active {
-  color: blue;
+  color: rgb(0, 255, 242);
 }
 
 .links #especial::after {
@@ -123,7 +122,8 @@ nav ul li {
     display: inline-block;
     background-color: lightblue;
     border: 2px solid black;
-    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 150px;
     width: 150px;
 }
@@ -133,7 +133,7 @@ nav ul li {
 
 .duelista {
   align-self: center;
-  width: 300px;
+  width: 241px;
   border: 1px solid black;
 }
 .tipos-hover .duelista > ul {
@@ -145,7 +145,7 @@ nav ul li {
       display: block;
       color: white;
       background-color: rgb(237, 237, 237); 
-      width: 300px;
+      width: 200px;
 }
 .tipos-hover .duelista:hover {
   color: rgb(255, 0, 0);
