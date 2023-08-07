@@ -3,12 +3,19 @@
 
 <head>
     <style>
-        h1 {
+        body {
+            background-color: black;
+            color: white;
+        }
+            h1 {
             text-align: center;
         }
 
         ul {
             list-style-type: none;
+        }
+        audio {
+            width: 300px;
         }
 
         li {
@@ -21,21 +28,22 @@
 
         #audio-player {
             margin-top: 20px;
+            
         }
 
-        ```
     </style>
 </head>
 
 <body>
-    <h1>Minha Lista de Música</h1>
-    <ul id="music-list">
+    
 
-        <li onclick="playSong('song1.mp3', 'Música 1')">Música 1</li>
-        <li onclick="playSong('song2.mp3', 'Música 2')">Música 2</li>
-        <li onclick="playSong('song3.mp3', 'Música 3')">Música 3</li>
-    </ul>
     <div id="music-info">
+        <h1>Minha Lista de Música</h1>
+        <ul id="music-list">
+            <li onclick="playSong('doente-de-amor.mp3', 'Doente de amor')">Doente de amor</li>
+            <li onclick="playSong('musica-romantica.mp3', 'Música Romantica')">Música Romantica</li>
+            <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+        </ul>
         <p id="current-song"></p>
         <audio id="music-player" controls></audio>
     </div>
