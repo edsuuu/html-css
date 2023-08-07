@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            cursor: pointer;
+        }
+
+        #music-info {
+            text-align: center;
+        }
+
+        #audio-player {
+            margin-top: 20px;
+        }
+
+        ```
+    </style>
+</head>
+
+<body>
+    <h1>Minha Lista de Música</h1>
+    <ul id="music-list">
+
+        <li onclick="playSong('song1.mp3', 'Música 1')">Música 1</li>
+        <li onclick="playSong('song2.mp3', 'Música 2')">Música 2</li>
+        <li onclick="playSong('song3.mp3', 'Música 3')">Música 3</li>
+    </ul>
+    <div id="music-info">
+        <p id="current-song"></p>
+        <audio id="music-player" controls></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<script>
+    function playSong(song, songName) {
+        var audioPlayer =
+            document.getElementById("music-player");
+        var currentSong = document.getElementById("current-song");
+        audioPlayer.src = song;
+        currentSong.textContent = "Tocando: " + songName;
+    }
+</script>
