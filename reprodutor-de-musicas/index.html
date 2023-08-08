@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/assets/style/main.css">
+    <title>Reprodutor de Musica</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="music-info">
+
+            <h1>Playlist de Musica</h1>
+
+            <div class="reprodutor">
+                <p id="current-song"></p>
+                <audio id="music-player" controls></audio>
+            </div>
+            
+            <p id="lst">Lista de Musicas para escutar</p>
+
+            <div class="msc-list">
+
+                <div class="bloco">
+                    <ol id="music-list">
+                        <li onclick="playSong('doente-de-amor.mp3', 'Doente de amor')">Doente de amor</li>
+                        <li onclick="playSong('musica-romantica.mp3', 'Música Romantica')">Música Romantica</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                    </ol>
+                </div>
+
+                <div class="bloco">
+                    <ol id="music-list">
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                        <li onclick="playSong('que-isso-moreno.mp3', 'que isso moreno')">que isso moreno</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="src/assets/js/app.js"></script>
+</body>
+</html>
